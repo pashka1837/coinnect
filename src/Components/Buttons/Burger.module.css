@@ -1,0 +1,20 @@
+.burger_btn {
+  cursor: pointer;
+  width: 35px;
+  background: none;
+  border: none;
+}
+
+.open {
+  color: #4cc9f0;
+}
+
+.close {
+  color: #4cc9f0;
+}
+
+@media screen and (min-width: 768px) {
+  .burger_btn {
+    width: 40px;
+  }
+}

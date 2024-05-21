@@ -1,0 +1,80 @@
+.hero {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+}
+
+.inner {
+  /* padding: calc(var(--navbar-height) + 15px) 15% 5%; */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 40px;
+}
+
+.text {
+  display: grid;
+  gap: 20px;
+  line-height: 35px;
+  font-size: clamp(1.1rem, 3vw, 2.2rem);
+}
+
+.name {
+  font-weight: 800;
+  /* font-weight: 800; */
+}
+
+.desc {
+  font-weight: 400;
+}
+
+.hero_img {
+  width: 300px;
+}
+
+.btn_container {
+  display: flex;
+  gap: 50px;
+  align-self: self-start;
+}
+
+.sign_btn {
+  background-color: #f72585;
+  color: #3a0ca3;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    align-items: center;
+  }
+  .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .hero_img {
+    width: 350px;
+  }
+
+  .text {
+    line-height: 45px;
+  }
+
+  .btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inner {
+    gap: 0;
+  }
+  .hero_img {
+    width: 450px;
+  }
+
+  .text {
+    line-height: 55px;
+  }
+}

@@ -1,0 +1,33 @@
+.auth {
+  height: calc(100dvh - var(--footer-height));
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  align-content: space-evenly;
+  justify-items: center;
+}
+
+.inner {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .auth_img {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inner {
+    gap: 0;
+  }
+
+  .auth_img {
+    width: 450px;
+  }
+}

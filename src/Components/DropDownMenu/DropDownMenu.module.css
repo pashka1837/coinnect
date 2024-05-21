@@ -1,0 +1,27 @@
+.mobile_menu {
+  padding: 5% 10%;
+  position: absolute;
+  z-index: 3;
+  top: var(--navbar-height);
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(30px);
+  transition: all ease-in-out 0.3s;
+  transform: translateX(-150%);
+
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+/* @media screen and (min-width: 768px) {
+  .mobile_menu {
+    display: none;
+  }
+} */

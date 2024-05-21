@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --navbar-height: 60px;
+  --footer-height: 70px;
+  transition: height 0.2s linear;
+  height: 100vh;
+  color: #3a0ca3;
+}
+
+body:has(.mobile_menu.open) {
+  overflow: hidden;
+}
+
+.container_gr {
+  display: grid;
+  transition: height 0.2s linear;
+  padding: calc(var(--navbar-height) + 15px) 15% 5%;
+  height: 100dvh;
+}
+.container_outer {
+  height: 100dvh;
+}
+
+.container_blur {
+  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 50px;
+}
+
+.btn {
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  /* font-size: 1rem; */
+  font-weight: 600;
+  text-wrap: nowrap;
+  padding: 10% 14%;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 15px #f72585;
+}
+
+@media screen and (min-width: 768px) {
+  body:has(.mobile_menu.open) {
+    overflow: auto;
+  }
+
+  body {
+    --navbar-height: 70px;
+  }
+
+  .container_gr {
+    padding: calc(var(--navbar-height) + 15px) 10% 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container_gr {
+    padding: 5% 10% 0;
+  }
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+button,
+a,
+div {
+  -webkit-tap-highlight-color: transparent;
+}

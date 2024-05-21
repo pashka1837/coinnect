@@ -1,0 +1,28 @@
+.menuItems {
+  height: 100%;
+  display: grid;
+  gap: 20px;
+  align-content: baseline;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #b5179e;
+}
+
+.current {
+  text-decoration: underline;
+}
+
+/* .menuLink:hover {
+  text-decoration: underline;
+} */
+
+@media screen and (min-width: 768px) {
+  .menuItems {
+    height: auto;
+    display: flex;
+    gap: 50px;
+    align-items: baseline;
+  }
+}

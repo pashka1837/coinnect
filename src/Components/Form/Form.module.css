@@ -1,0 +1,76 @@
+.myForm {
+  padding: 12% 8%;
+  border: 2px solid #4cc9f0;
+  border-radius: 10px;
+  display: grid;
+  gap: 10px;
+}
+
+.form_name {
+  color: #4cc9f0;
+}
+
+.myForm:has(input:focus) {
+  border-color: #4361ee;
+}
+
+.myForm:has(input:focus) .form_name {
+  color: #4361ee;
+}
+
+.btn_container {
+  display: grid;
+  gap: 5px;
+}
+
+.ifLogedIn {
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+}
+
+.submit_btn,
+.extra_btn {
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  height: 35px;
+}
+
+.submit_btn {
+  color: #4cc9f0;
+  background-color: #f72585;
+}
+
+.submit_btn:disabled {
+  box-shadow: none;
+}
+
+.extra_btn {
+  padding: 10px 15px;
+  color: #4cc9f0;
+  background-color: #4361ee;
+}
+
+.extra_btn:hover {
+  box-shadow: 2px 2px 15px #4361ee;
+}
+
+@media screen and (min-width: 768px) {
+  .myForm {
+    padding: 5% 8%;
+    gap: 20px;
+  }
+
+  .submit_btn,
+  .extra_btn {
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* .myForm {
+    padding: 3% 3%;
+  } */
+}

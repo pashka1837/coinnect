@@ -1,0 +1,33 @@
+.features {
+  padding-bottom: calc(var(--footer-height) + 20px);
+  height: auto;
+  justify-items: center;
+  align-items: start;
+  gap: 50px;
+}
+
+.text {
+  display: grid;
+  gap: 20px;
+  line-height: clamp(35px, 3vw, 55px);
+  font-size: clamp(1.3rem, 3vw, 2.4rem);
+}
+
+.cards_container {
+  display: grid;
+  gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: calc(var(--navbar-height) + 100px) 10% 5% !important;
+    gap: 100px;
+  }
+
+  .cards_container {
+    gap: 70px;
+  }
+}
