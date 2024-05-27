@@ -1,9 +1,9 @@
 .mobile_menu {
   padding: 5% 10%;
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: var(--navbar-height);
-  bottom: 50%;
+  /* bottom: 50%; */
   left: 0;
   right: 0;
   background-color: #adb5bd;

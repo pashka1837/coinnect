@@ -21,13 +21,13 @@ export default function Hero() {
 								navigate('/signup');
 							}}>
 					Get Started</button>
-						<button
+						{/* <button
 							className={`${styles.sign_btn} btn`}
 							type='button'
 							onClick={() => {
 								navigate('/signup');
 							}}>
-					Twitter</button>
+					Twitter</button> */}
 					</div>
 				</div>
 				<img className={styles.hero_img} src={heroIMG} alt='profile image' />
