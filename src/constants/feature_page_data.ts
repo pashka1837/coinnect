@@ -1,29 +1,29 @@
-import data_bro_img from '../assets/images/cards/data-extraction-bro.svg';
-import perfor_over_img from '../assets/images/cards/performance-overview-bro.svg';
-import nfr_for_all_img from '../assets/images/cards/NFT-amico.svg';
-import cross_platform_img from '../assets/images/cards/cross-platform-software-amico.svg';
 
-export type CardData = {
-	imgSrc: string;
+export type FeatureCardData = {
+	title: string;
 	desc: string;
 };
 
-const data: CardData[] = [
+const data: FeatureCardData[] = [
 	{
-		imgSrc: data_bro_img,
-		desc: 'Our AI manager analyzes your assets, risk tolerance, and investment goals to provide tailored recommendations that help you optimize your portfolio and maximize returns in the dynamic crypto and NFT markets.',
+		title: 'Tokenized Tickets',
+		desc: 'Say goodbye to counterfeit tickets and fraud. With our Solana-based tokenized tickets, each ticket is unique, secure, and easily transferable. Attendees can buy, sell, and transfer their tickets with complete confidence.',
 	},
 	{
-		imgSrc: perfor_over_img,
-		desc: 'Stay ahead of the curve with access to real-time market analysis and insights. Our advanced machine learning algorithms continuously monitor market trends and news, providing you with timely information to make informed investment decisions.',
+		title: 'Blockchain-Based Payments',
+		desc: 'Embrace the future of transactions with our secure blockchain-based payment system. Accept payments in Solana (SOL), USD Coin (USDC), and other popular cryptocurrencies, making it easier for a global audience to participate.',
 	},
 	{
-		imgSrc: nfr_for_all_img,
-		desc: 'Discover the best deals and investment opportunities in the crypto and NFT markets. Our AI manager identifies high-potential opportunities based on your preferences and risk profile, helping you capitalize on market fluctuations and emerging trends.',
+		title: 'Engagement',
+		desc: 'Keep your audience engaged and rewarded. Participants can earn tokens for attending sessions, interacting with content, and participating in activities. These tokens can be redeemed for discounts, merchandise, or exclusive access to future events.',
 	},
 	{
-		imgSrc: cross_platform_img,
-		desc: 'Trust in our platform\'s security and reliability. We prioritize the safety of your assets with robust encryption and data protection measures, ensuring that your financial information remains confidential and secure.',
+		title: 'Real-Time Analytics',
+		desc: 'Gain insights into attendee behavior and event performance with our advanced analytics dashboard. Track engagement, monitor ticket sales, and optimize your event in real-time.',
+	},
+	{
+		title: 'Customizable Experience',
+		desc: 'Tailor the platform to meet the specific needs of your event. From branding to functionality, customize every aspect to create a unique and memorable experience for your attendees.',
 	},
 ];
 

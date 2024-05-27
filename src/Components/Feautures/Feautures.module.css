@@ -8,26 +8,30 @@
 
 .text {
   display: grid;
+  color: #f0ae00;
   gap: 20px;
   line-height: clamp(35px, 3vw, 55px);
   font-size: clamp(1.3rem, 3vw, 2.4rem);
 }
 
 .cards_container {
+  padding: 0 5%;
   display: grid;
-  gap: 50px;
+  row-gap: 50px;
 }
 
 @media screen and (min-width: 768px) {
+  .cards_container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 70px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .features {
-    padding: calc(var(--navbar-height) + 100px) 10% 5% !important;
+    padding: calc(var(--navbar-height) + 100px) 10%
+      calc(var(--navbar-height) + 100px);
     gap: 100px;
-  }
-
-  .cards_container {
-    gap: 70px;
   }
 }

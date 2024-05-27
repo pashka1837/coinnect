@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -7,9 +7,9 @@
 }
 
 :root {
-  font-family: "Josefin Sans", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
 }
 
 html {
@@ -17,11 +17,12 @@ html {
 }
 
 body {
+  background-color: #212529;
   --navbar-height: 60px;
   --footer-height: 70px;
   transition: height 0.2s linear;
   height: 100vh;
-  color: #3a0ca3;
+  color: #e9ecef;
 }
 
 body:has(.mobile_menu.open) {
@@ -44,21 +45,29 @@ body:has(.mobile_menu.open) {
   border-radius: 50px;
 }
 
+.hr {
+  /* background-color: #f0ae00; */
+  width: 75vw;
+  color: #f0ae00;
+  border-top: 1px solid #f0ae00;
+  border-radius: 50%;
+}
+
 .btn {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-size: clamp(0.7rem, 2vw, 1.1rem);
   /* font-size: 1rem; */
   font-weight: 600;
   text-wrap: nowrap;
-  padding: 10% 14%;
-  border-radius: 20px;
-  border: none;
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
   text-align: center;
+  transition: all ease-in 0.2s;
 }
 
 .btn:hover {
-  box-shadow: 2px 2px 15px #f72585;
+  scale: 1.2;
 }
 
 @media screen and (min-width: 768px) {

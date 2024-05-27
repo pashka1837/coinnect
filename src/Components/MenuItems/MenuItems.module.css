@@ -7,7 +7,7 @@
 
 .menuLink {
   text-decoration: none;
-  color: #b5179e;
+  color: #212529;
 }
 
 .current {
@@ -19,6 +19,12 @@
 } */
 
 @media screen and (min-width: 768px) {
+  .menuLink:hover {
+    color: #6c757d;
+    scale: 1.2;
+    transition: all ease-out 0.2s;
+  }
+
   .menuItems {
     height: auto;
     display: flex;

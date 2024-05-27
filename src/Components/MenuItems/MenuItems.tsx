@@ -14,20 +14,20 @@ const links: MyLink[] = [
 		desc: 'Home',
 	},
 	{
-		href: '/features',
-		desc: 'Features',
+		href: '/about',
+		desc: 'About Us',
 	},
-	{
-		href: '/tech',
-		desc: 'Tech',
-	},
+	// {
+	// 	href: '/tech',
+	// 	desc: 'Tech',
+	// },
 	{
 		href: '/contacts',
-		desc: 'Contact',
+		desc: 'Contacts',
 	},
 	{
 		href: '/login',
-		desc: 'Account',
+		desc: 'Profile',
 	},
 	// {
 	// 	href: twitterLink,

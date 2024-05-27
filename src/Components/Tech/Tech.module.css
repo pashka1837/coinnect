@@ -9,8 +9,9 @@
 .text {
   display: grid;
   gap: 20px;
-  line-height: clamp(30px, 3vw, 35px);
-  font-size: clamp(1rem, 3vw, 1.6rem);
+  color: #f0ae00;
+  line-height: clamp(35px, 3vw, 55px);
+  font-size: clamp(1.3rem, 3vw, 2.4rem);
 }
 
 .logoName {
@@ -23,15 +24,31 @@
   grid-template-columns: 1fr;
   gap: 50px;
 }
+
+.cards_container {
+  display: grid;
+  gap: 50px;
+}
+.cards_container.big {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards_container.md {
+  grid-template-columns: 1fr 1fr;
+}
+.cards_container.sm {
+  grid-template-columns: 1fr;
+}
+
 .card {
   padding: 7% 10%;
   display: grid;
   justify-items: center;
   align-items: start;
-  gap: 50px;
-  border: 2px solid #3a0ca3;
+  gap: 30px;
+  border: 2px solid #f0ae00;
+  border-radius: 40px;
   text-decoration: none;
-  color: #3a0ca3;
 }
 
 .card:visited {
@@ -49,7 +66,7 @@
 
 @media screen and (min-width: 768px) {
   .card {
-    padding: 5%;
+    /* padding: 5%; */
   }
   .tech_cards_container {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -63,5 +80,8 @@
   .tech {
     padding: calc(var(--navbar-height) + 100px) 10% 5% !important;
     gap: 100px;
+  }
+  .card {
+    gap: 50px;
   }
 }
