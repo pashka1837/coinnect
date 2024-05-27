@@ -6,7 +6,7 @@
 
 const twitterLogo = <svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='32' height='32' viewBox='0,0,300,150'
 >
-	<g fill='#b5179e' fillRule='nonzero' stroke='none' strokeWidth='1' strokeLinecap='butt' strokeLinejoin='miter' strokeMiterlimit='10' strokeDasharray='' strokeDashoffset='0' fontFamily='none' fontWeight='none' fontSize='none' textAnchor='none' ><g transform='scale(16,16)'><path d='M2.29688,2c-0.244,0 -0.38514,0.27561 -0.24414,0.47461l4.43555,6.23047l-4.47461,5.29492h1.33203l3.74805,-4.44727l2.86719,4.02734c0.188,0.264 0.49145,0.41992 0.81445,0.41992h2.92773c0.244,0 0.38514,-0.27561 0.24414,-0.47461l-4.67188,-6.5625l4.18164,-4.96289h-1.30273l-3.48047,4.11914l-2.63477,-3.69922c-0.188,-0.264 -0.49145,-0.41992 -0.81445,-0.41992zM3.6543,3h1.57031l7.12109,10h-1.57031z'></path></g></g>
+	<g fill='#e9ecef' fillRule='nonzero' stroke='none' strokeWidth='1' strokeLinecap='butt' strokeLinejoin='miter' strokeMiterlimit='10' strokeDasharray='' strokeDashoffset='0' fontFamily='none' fontWeight='none' fontSize='none' textAnchor='none' ><g transform='scale(16,16)'><path d='M2.29688,2c-0.244,0 -0.38514,0.27561 -0.24414,0.47461l4.43555,6.23047l-4.47461,5.29492h1.33203l3.74805,-4.44727l2.86719,4.02734c0.188,0.264 0.49145,0.41992 0.81445,0.41992h2.92773c0.244,0 0.38514,-0.27561 0.24414,-0.47461l-4.67188,-6.5625l4.18164,-4.96289h-1.30273l-3.48047,4.11914l-2.63477,-3.69922c-0.188,-0.264 -0.49145,-0.41992 -0.81445,-0.41992zM3.6543,3h1.57031l7.12109,10h-1.57031z'></path></g></g>
 </svg>;
 
 const instLogo = <svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='32' height='32' viewBox='0,0,256,256'
