@@ -6,9 +6,9 @@
   bottom: 50%;
   left: 0;
   right: 0;
-  backdrop-filter: blur(30px);
+  background-color: #adb5bd;
   transition: all ease-in-out 0.3s;
-  transform: translateX(-150%);
+  transform: translateY(-150%);
 
   display: grid;
   justify-items: end;
@@ -17,11 +17,5 @@
 }
 
 .open {
-  transform: translateX(0);
+  transform: translateY(0);
 }
-
-/* @media screen and (min-width: 768px) {
-  .mobile_menu {
-    display: none;
-  }
-} */
