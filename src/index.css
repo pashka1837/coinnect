@@ -47,7 +47,7 @@ body:has(.mobile_menu.open) {
 
 .hr {
   /* background-color: #f0ae00; */
-  width: 75vw;
+  width: 85vw;
   color: #f0ae00;
   border-top: 1px solid #f0ae00;
   border-radius: 50%;
