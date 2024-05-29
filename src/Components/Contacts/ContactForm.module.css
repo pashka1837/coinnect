@@ -1,0 +1,57 @@
+.myform {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  display: grid;
+  gap: 20px;
+}
+
+.user_data {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.myBtn {
+  border-radius: 0;
+  background-color: transparent;
+  color: #f0ae00;
+  padding: 5px 15px;
+  border-color: #f0ae00;
+}
+
+.myBtn:hover {
+  background-color: #f0ae00;
+  color: #212529;
+  scale: 1;
+}
+.myBtn:disabled {
+  border: none;
+  color: grey;
+}
+
+.myInput {
+  background-color: transparent;
+  border: 2px solid #e9ecef;
+  /* border-radius: 10px; */
+  padding-left: 10px;
+  width: 100%;
+  height: 30px;
+  color: #e9ecef;
+  font-family: inherit;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+textarea.myInput {
+  max-width: 80vw;
+  height: 80px;
+}
+
+.myInput:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  textarea.myInput {
+    max-width: 50vw;
+    height: 80px;
+  }
+}
