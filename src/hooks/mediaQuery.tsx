@@ -7,7 +7,6 @@ export default function useMediaQuery() {
 
 	const {setOpen} = useStore();
 	useEffect(() => {
-		console.log(isTablet, isDesk);
 		function changeWith() {
 			if (!isTablet && window.innerWidth >= 768) {
 				setDevice(true);
@@ -15,8 +14,8 @@ export default function useMediaQuery() {
 			}
 
 			if (isTablet && window.innerWidth < 768) {
-				console.log('was tabl, changing to sm');
 				setDevice(false);
+				setOpen(false);
 			}
 
 			if (!isDesk && window.innerWidth >= 1200) {

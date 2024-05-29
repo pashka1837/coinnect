@@ -3,7 +3,7 @@ import Footer from '../Components/Footer/Footer';
 import Hero from '../Components/Hero/Hero';
 import Tech from '../Components/Tech/Tech';
 
-export default function Main() {
+export default function Home() {
 	return (
 		<div style={{display: 'grid', placeItems: 'center'}}>
 			<Hero/>

@@ -3,8 +3,8 @@ import {type InputState, type SubmitFn} from '../../types';
 import MyForm from '../Form/MyForm';
 import MyInput from '../MyInput/MyInput';
 import styles from './Auth.module.css';
-import loginIMG from '../../assets/images/login.svg';
 import useMediaQuery from '../../hooks/mediaQuery';
+import loginIMG from '../../assets/images/login.svg';
 
 export default function Login() {
 	const {isTablet} = useMediaQuery();
@@ -29,7 +29,7 @@ export default function Login() {
 		<div className={`${styles.auth} container_gr`}>
 			<h2 className={styles.title}>Welcome back, let&apos;s get started!</h2>
 			<div className={styles.inner}>
-				{isTablet && <img className={styles.auth_img} src={loginIMG} alt='login page image' />}
+				{isTablet ? <img className={styles.auth_img} src={loginIMG} alt='login page image' /> : null}
 				<MyForm handleSubmit={handleSubmit} {...props}>
 					<MyInput inputState={emailInput} setInput={setEmailInput} type='email' placeHolder='Email'/>
 					<MyInput inputState={passwInput} setInput={setPasswInput} type='password' placeHolder='Password' />

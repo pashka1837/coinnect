@@ -15,6 +15,9 @@
   grid-template-columns: 1fr;
   place-items: center;
 }
+.auth_img {
+  width: 50px;
+}
 
 @media screen and (min-width: 768px) {
   .inner {

@@ -9,7 +9,7 @@ import ErrorComp from './Components/ErrorComp/ErrorComp.tsx';
 import Login from './Components/Auth/Login.tsx';
 import Signup from './Components/Auth/Signup.tsx';
 import Contacts from './Components/Contacts/Contacts.tsx';
-import Main from './Pages/Main.tsx';
+import Home from './Pages/Home.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
 		errorElement: <ErrorComp />,
 		children: [
 			{
-				path: '/',
-				element: <Main />,
+				index: true,
+				element: <Home />,
 			},
 			{
 				path: 'contacts',

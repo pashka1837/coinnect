@@ -42,7 +42,7 @@ export default function Signup() {
 		<div className={`${styles.auth} container_gr`}>
 			<h2 className={styles.title} style={{justifySelf: 'self-start'}}>Ready to join and host event?</h2>
 			<div className={styles.inner}>
-				{isTablet && <img className={styles.auth_img} src={loginIMG} alt='login page image' />}
+				{isTablet && <img className={styles.auth_img} src={loginIMG} alt='signup page image' />}
 				<MyForm handleSubmit={handleSubmit} {...props}>
 					<MyInput inputState={firstNaInput} setInput={setFirstNaInput} type='text' placeHolder='First Name'/>
 					<MyInput inputState={lastNaInput} setInput={setLastNaInput} type='text' placeHolder='Last Name'/>

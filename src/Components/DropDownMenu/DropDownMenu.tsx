@@ -4,7 +4,6 @@ import styles from './DropDownMenu.module.css';
 
 export default function DropDownMenu() {
 	const {isMenuOpen} = useStore();
-
 	return (
 		<div
 			className={`${styles.mobile_menu} ${isMenuOpen ? styles.open : ''}`}>
