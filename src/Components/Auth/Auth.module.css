@@ -5,6 +5,10 @@
   justify-items: center;
 }
 
+.title {
+  color: var(--orange);
+}
+
 .inner {
   display: grid;
   width: 100%;

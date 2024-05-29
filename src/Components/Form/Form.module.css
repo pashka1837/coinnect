@@ -1,21 +1,20 @@
 .myForm {
   padding: 12% 8%;
-  border: 2px solid #4cc9f0;
-  border-radius: 10px;
+  border: 2px solid var(--light-grey);
   display: grid;
   gap: 10px;
 }
 
 .form_name {
-  color: #4cc9f0;
+  color: var(--light-grey);
 }
 
 .myForm:has(input:focus) {
-  border-color: #4361ee;
+  border-color: var(--orange);
 }
 
 .myForm:has(input:focus) .form_name {
-  color: #4361ee;
+  color: var(--orange);
 }
 
 .btn_container {
@@ -24,23 +23,12 @@
 }
 
 .ifLogedIn {
-  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
-}
-
-.submit_btn,
-.extra_btn {
-  font-family: "Josefin Sans", sans-serif;
-  cursor: pointer;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
-  font-weight: 600;
-  border-radius: 10px;
-  border: none;
-  height: 35px;
 }
 
-.submit_btn {
-  color: #4cc9f0;
-  background-color: #f72585;
+.extra_link {
+  color: var(--orange);
+  text-decoration: none;
 }
 
 .submit_btn:disabled {
@@ -70,7 +58,4 @@
 }
 
 @media screen and (min-width: 1200px) {
-  /* .myForm {
-    padding: 3% 3%;
-  } */
 }

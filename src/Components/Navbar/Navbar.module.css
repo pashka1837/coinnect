@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #adb5bd;
+  background-color: var(--md-grey);
   color: #f72585;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@
 }
 
 .logo_text {
-  color: #212529;
+  color: var(--dark-grey);
   display: block;
   font-weight: 800;
 }
@@ -66,8 +66,4 @@
   .logo_text {
     display: block;
   }
-
-  /* .logo_img {
-    width: 60px;
-  } */
 }

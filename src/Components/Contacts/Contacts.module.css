@@ -1,6 +1,6 @@
 .contact {
-  padding: calc(var(--navbar-height) + 45px) 15% 5%;
-  min-height: 100dvh;
+  padding: calc(var(--navbar-height) + 45px) 10% 5%;
+  height: auto;
   justify-items: center;
   align-items: center;
   gap: 50px;
@@ -20,7 +20,7 @@
   font-size: clamp(1rem, 3vw, 1.6rem);
 }
 .text h1 {
-  color: #f0ae00;
+  color: var(--orange);
 }
 
 .text_info {
@@ -36,7 +36,7 @@
 }
 
 .link {
-  color: #e9ecef;
+  color: var(--light-gret);
   text-decoration: none;
 }
 .link svg {

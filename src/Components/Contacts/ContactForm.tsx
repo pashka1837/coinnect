@@ -1,9 +1,11 @@
-import {type FormEvent} from 'react';
+import {useState, type FormEvent} from 'react';
 import useStore from '../../feature/store';
 import styles from './ContactForm.module.css';
 
 export default function ContactForm() {
 	const {setEmail, isEmailSent} = useStore();
+	const [inpVals, setInpValse] = useState({name: '', email: '', mesg: ''});
+
 	function handleSubmit(e: FormEvent<HTMLFormElement>) {
 		e.preventDefault();
 		const form = e.currentTarget;
@@ -13,24 +15,36 @@ export default function ContactForm() {
 
 	return (
 		<form className={styles.myform} onSubmit={handleSubmit}>
-			{/* <h3 style={{color: '#f0ae00'}}>
-                   Send us email
-			</h3> */}
 			<div className={styles.user_data}>
-				<div>
+				<div className={styles.inp_container}>
 					<p>Name</p>
-					<input className={styles.myInput} type='text' required />
+					<input
+						onChange={e => {
+							setInpValse({...inpVals, name: e.currentTarget.value});
+						}}
+						className={styles.myInput} type='text'
+						required />
 				</div>
-				<div>
+				<div className={styles.inp_container}>
 					<p>Email</p>
-					<input className={styles.myInput} type='email' required />
+					<input
+						onChange={e => {
+							setInpValse({...inpVals, email: e.currentTarget.value});
+						}}
+						className={styles.myInput} type='email'
+						required />
 				</div>
 			</div>
-			<div>
+			<div className={styles.inp_container}>
 				<p>Message</p>
-				<textarea className={styles.myInput} required ></textarea>
+				<textarea
+					onChange={e => {
+						setInpValse({...inpVals, mesg: e.currentTarget.value});
+					}}
+				 className={styles.myInput}
+				 required />
 			</div>
-			{!isEmailSent && <button className={`btn ${styles.myBtn}`} type='submit'>Submit</button>}
+			{!isEmailSent && <button disabled={!inpVals.name || !inpVals.email || !inpVals.mesg} className={`btn ${styles.myBtn}`} type='submit'>Submit</button>}
 			{isEmailSent && <div className='container_blur'><p>You have successfully sent message.</p></div> }
 		</form>
 	);

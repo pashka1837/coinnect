@@ -1,27 +1,11 @@
-import {useEffect, useState} from 'react';
 import data, {type TechCardData} from '../../constants/tech_page_data';
 import styles from './Tech.module.css';
 import useMediaQuery from '../../hooks/mediaQuery';
+import useSlides from '../../hooks/useSlides';
 
 export default function Tech() {
 	const {isTablet, isDesk} = useMediaQuery();
-	const [slides, setSlides] = useState({
-		prev: 0,
-		cur: 1,
-		next: 2,
-	});
-
-	useEffect(() => {
-		setTimeout(() => {
-			const lastEl = data.length - 1;
-			if (slides.prev < lastEl - 2) {
-				setSlides({prev: slides.prev + 1, cur: slides.cur + 1, next: slides.next + 1});
-			} else {
-				setSlides({prev: -2, cur: -1, next: 0});
-			}
-		}, 2000);
-		console.log(slides.prev, slides.cur, slides.next);
-	}, [slides.prev]);
+	const {slides} = useSlides({data});
 
 	return (
 		<div className={`${styles.tech} container_gr`}>

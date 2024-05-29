@@ -2,11 +2,12 @@ import {useEffect, useState} from 'react';
 import useStore from '../feature/store';
 
 export default function useMediaQuery() {
-	const [isTablet, setDevice] = useState<boolean>(window.innerWidth > 768);
+	const [isTablet, setDevice] = useState<boolean>(window.innerWidth >= 768);
 	const [isDesk, setDesk] = useState<boolean>(window.innerWidth >= 1200);
 
 	const {setOpen} = useStore();
 	useEffect(() => {
+		console.log(isTablet, isDesk);
 		function changeWith() {
 			if (!isTablet && window.innerWidth >= 768) {
 				setDevice(true);
@@ -14,6 +15,7 @@ export default function useMediaQuery() {
 			}
 
 			if (isTablet && window.innerWidth < 768) {
+				console.log('was tabl, changing to sm');
 				setDevice(false);
 			}
 
@@ -28,6 +30,7 @@ export default function useMediaQuery() {
 
 		window.addEventListener('resize', changeWith);
 		return () => {
+			console.log('useeffect');
 			window.removeEventListener('resize', changeWith);
 		};
 	}, [isTablet, isDesk]);

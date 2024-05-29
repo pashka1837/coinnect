@@ -1,5 +1,5 @@
 import styles from './ErrorComp.module.css';
-import websiteIMG from '../../assets/images/website_setup.svg';
+import notFoundIMG from '../../assets/images/404.svg';
 import {supportLink} from '../../constants/links';
 import {useNavigate} from 'react-router-dom';
 
@@ -20,7 +20,7 @@ export default function ErrorComp() {
 					<p>If you have problem with login, signing up or something else, email us at <a className={styles.social_link} href={`mailto:${supportLink}`}>{supportLink}</a></p>
 				</div>
 			</div>
-			<img className={styles.signup_img} src={websiteIMG} alt='website setup image' />
+			<img className={styles.notFound_img} src={notFoundIMG} alt='not found page image' />
 		</div>
 	);
 }

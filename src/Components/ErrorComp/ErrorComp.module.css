@@ -10,29 +10,19 @@
 }
 
 .home_btn {
-  padding: 10px 20px;
   margin-bottom: 50px;
-  color: #b5179e;
 }
 
 .text {
   font-size: clamp(1.3rem, 3vw, 2.4rem);
 }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
 .social_link {
   text-decoration: none;
-  color: #b5179e;
-}
-.social_link svg {
-  width: 20px;
+  color: var(--orange);
 }
 
-.signup_img {
+.notFound_img {
   width: 300px;
 }
 
@@ -41,33 +31,17 @@
     grid-template-columns: 50% 80%;
     overflow: hidden;
   }
-  .subheadline {
-    text-align: left;
-  }
-  .socials {
-    justify-content: flex-start;
-  }
-  .signup_img {
+
+  .notFound_img {
     width: 450px;
   }
-  .social_link svg {
-    width: 24px;
-  }
-
-  /* .social_link img {
-    width: 50px;
-  } */
 }
 
 @media screen and (min-width: 1200px) {
   .error_el {
     grid-template-columns: 50% 50%;
   }
-  .signup_img {
+  .notFound_img {
     width: 500px;
-  }
-
-  .social_link svg {
-    width: 30px;
   }
 }

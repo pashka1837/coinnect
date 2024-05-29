@@ -27,7 +27,7 @@ export default function Login() {
 
 	return (
 		<div className={`${styles.auth} container_gr`}>
-			<h2>Welcome back, let&apos;s earn together!</h2>
+			<h2 className={styles.title}>Welcome back, let&apos;s get started!</h2>
 			<div className={styles.inner}>
 				{isTablet && <img className={styles.auth_img} src={loginIMG} alt='login page image' />}
 				<MyForm handleSubmit={handleSubmit} {...props}>
