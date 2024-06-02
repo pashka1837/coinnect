@@ -1,0 +1,14 @@
+.links {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  display: grid;
+  gap: 10px;
+  width: 100%;
+}
+
+.link {
+  color: var(--light-gret);
+  text-decoration: none;
+}
+.link svg {
+  margin-top: -10px;
+}

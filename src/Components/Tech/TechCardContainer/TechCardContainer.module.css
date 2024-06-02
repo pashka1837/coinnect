@@ -1,0 +1,14 @@
+.cards_container {
+  display: grid;
+  gap: 50px;
+}
+.cards_container.big {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards_container.md {
+  grid-template-columns: 1fr 1fr;
+}
+.cards_container.sm {
+  grid-template-columns: 1fr;
+}

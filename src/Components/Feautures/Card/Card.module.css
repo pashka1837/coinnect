@@ -3,12 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  border-top: 1px solid #e9ecef;
+  border-top: 1px solid var(--light-grey);
 }
 
 .card_title {
-  color: #f0ae00;
-
+  color: var(--orange);
   font-size: clamp(1rem, 3vw, 1.6rem);
 }
 
@@ -22,7 +21,4 @@
 }
 
 @media screen and (min-width: 1200px) {
-  /* .card {
-    padding: 0 5%;
-  } */
 }

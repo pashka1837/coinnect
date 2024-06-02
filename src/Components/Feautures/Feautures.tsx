@@ -1,5 +1,5 @@
 import styles from './Feautures.module.css';
-import Card from '../Card/Card';
+import Card from './Card/Card';
 import data from '../../constants/feature_page_data';
 
 export default function Feautures() {
@@ -10,7 +10,6 @@ export default function Feautures() {
 				Why Coinnect?
 				</h3>
 			</div>
-
 			<div className={styles.cards_container}>
 				{data.map(card => <Card key={card.desc} {...card} />,
 				)}

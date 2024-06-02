@@ -1,5 +1,5 @@
 import {useState, type FormEvent} from 'react';
-import useStore from '../../feature/store';
+import useStore from '../../../feature/store';
 import styles from './ContactForm.module.css';
 
 export default function ContactForm() {

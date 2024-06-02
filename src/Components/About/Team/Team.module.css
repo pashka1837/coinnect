@@ -1,0 +1,50 @@
+.team {
+  padding: 10% 0;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  gap: 50px;
+}
+
+.person {
+  display: grid;
+  place-items: center;
+}
+
+.person_img {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--orange);
+  filter: grayscale(0.9);
+}
+
+@media screen and (min-width: 500px) {
+  .person_img {
+    max-width: 175px;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .person_img {
+    max-width: 230px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    row-gap: 100px;
+  }
+  .person_img {
+    max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    column-gap: 100px;
+  }
+  .person_img {
+    max-width: 310px;
+  }
+}

@@ -1,5 +1,5 @@
 import styles from './Card.module.css';
-import {type FeatureCardData} from '../../constants/feature_page_data';
+import {type FeatureCardData} from '../../../constants/feature_page_data';
 
 export default function Card({title, desc}: FeatureCardData) {
 	return (

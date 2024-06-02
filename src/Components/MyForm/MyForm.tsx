@@ -1,5 +1,5 @@
 import {Form} from 'react-router-dom';
-import styles from './Form.module.css';
+import styles from './MyForm.module.css';
 import {type SubmitFn} from '../../types';
 
 type Props = {

@@ -4,17 +4,18 @@ import './index.css';
 import {
 	 RouterProvider, createBrowserRouter,
 } from 'react-router-dom';
-import Landing from './Pages/Landing.tsx';
+import Layout from './Pages/Layout.tsx';
 import ErrorComp from './Components/ErrorComp/ErrorComp.tsx';
-import Login from './Components/Auth/Login.tsx';
-import Signup from './Components/Auth/Signup.tsx';
-import Contacts from './Components/Contacts/Contacts.tsx';
+import Login from './Pages/Auth/Login.tsx';
+import Signup from './Pages/Auth/Signup.tsx';
+import Contacts from './Pages/Contact/Contacts.tsx';
 import Home from './Pages/Home.tsx';
+import About from './Pages/About/About.tsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <Landing />,
+		element: <Layout />,
 		errorElement: <ErrorComp />,
 		children: [
 			{
@@ -22,8 +23,12 @@ const router = createBrowserRouter([
 				element: <Home />,
 			},
 			{
-				path: 'contacts',
+				path: 'contact',
 				element: <Contacts />,
+			},
+			{
+				path: 'about',
+				element: <About />,
 			},
 			{
 				path: 'login',

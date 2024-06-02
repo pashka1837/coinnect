@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {type InputState, type SubmitFn} from '../../types';
-import MyForm from '../Form/MyForm';
-import MyInput from '../MyInput/MyInput';
+import MyForm from '../../Components/MyForm/MyForm';
+import MyInput from '../../Components/MyInput/MyInput';
 import styles from './Auth.module.css';
 import useMediaQuery from '../../hooks/mediaQuery';
 import loginIMG from '../../assets/images/login.svg';

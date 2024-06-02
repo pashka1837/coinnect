@@ -17,8 +17,8 @@ const links: MyLink[] = [
 		desc: 'About Us',
 	},
 	{
-		href: '/contacts',
-		desc: 'Contacts',
+		href: '/contact',
+		desc: 'Contact',
 	},
 	{
 		href: '/login',

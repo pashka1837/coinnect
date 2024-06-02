@@ -1,0 +1,42 @@
+.card {
+  padding: 7% 10%;
+  height: 310px;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  border: 2px solid var(--orange);
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.card_img {
+  width: 140px;
+}
+
+.card_desc {
+  font-size: clamp(0.8rem, 3vw, 1.4rem);
+  line-height: clamp(20px, 2.5vw, 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    height: 450px;
+  }
+  .card_img {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    gap: 50px;
+    height: 550px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .card {
+    height: 500px;
+  }
+}

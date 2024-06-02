@@ -8,7 +8,7 @@
 
 .text {
   display: grid;
-  color: #f0ae00;
+  color: var(--orange);
   gap: 20px;
   line-height: clamp(35px, 3vw, 55px);
   font-size: clamp(1.3rem, 3vw, 2.4rem);

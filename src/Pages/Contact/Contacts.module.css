@@ -1,0 +1,21 @@
+.contact {
+  padding: calc(var(--navbar-height) + 45px) 10% 5%;
+  height: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.inner {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding: calc(var(--navbar-height) + 100px) 10% 5% !important;
+    grid-template-columns: 1fr 1fr;
+  }
+}

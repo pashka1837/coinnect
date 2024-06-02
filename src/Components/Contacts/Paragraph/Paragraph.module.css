@@ -1,0 +1,14 @@
+.paragraph {
+  display: grid;
+  gap: 30px;
+  line-height: clamp(20px, 3vw, 35px);
+  font-size: clamp(1rem, 3vw, 1.6rem);
+}
+.title {
+  color: var(--orange);
+}
+
+.desc {
+  display: grid;
+  gap: 10px;
+}

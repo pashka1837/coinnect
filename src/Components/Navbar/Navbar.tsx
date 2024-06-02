@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css';
 import logo from '../../assets/logo.webp';
-import Burger from '../Buttons/Burger';
+import Burger from '../Burger/Burger';
 import MenuItems from '../MenuItems/MenuItems';
 import useMediaQuery from '../../hooks/mediaQuery';
 import DropDownMenu from '../DropDownMenu/DropDownMenu';
