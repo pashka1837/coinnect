@@ -1,9 +1,9 @@
-import styles from './ErrorComp.module.css';
+import styles from './NotFound.module.css';
 import notFoundIMG from '../../assets/images/404.svg';
 import {supportLink} from '../../constants/links';
 import {useNavigate} from 'react-router-dom';
 
-export default function ErrorComp() {
+export default function NotFound() {
 	const navigate = useNavigate();
 	return (
 		<div className={`${styles.error_el} container_gr`}>

@@ -1,5 +1,4 @@
 import styles from './Contacts.module.css';
-
 import ContactForm from '../../Components/Contacts/ContactForm/ContactForm';
 import useMediaQuery from '../../hooks/mediaQuery';
 import ContactLinks from '../../Components/Contacts/ContactLinks/ContactLinks';

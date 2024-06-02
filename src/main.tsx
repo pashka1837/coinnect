@@ -5,18 +5,18 @@ import {
 	 RouterProvider, createBrowserRouter,
 } from 'react-router-dom';
 import Layout from './Pages/Layout.tsx';
-import ErrorComp from './Components/ErrorComp/ErrorComp.tsx';
+import NotFound from './Pages/NotFound/NotFound.tsx';
 import Login from './Pages/Auth/Login.tsx';
 import Signup from './Pages/Auth/Signup.tsx';
 import Contacts from './Pages/Contact/Contacts.tsx';
-import Home from './Pages/Home.tsx';
+import Home from './Pages/Home/Home.tsx';
 import About from './Pages/About/About.tsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Layout />,
-		errorElement: <ErrorComp />,
+		errorElement: <NotFound />,
 		children: [
 			{
 				index: true,

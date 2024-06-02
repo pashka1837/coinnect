@@ -1,7 +1,7 @@
-import Feautures from '../Components/Feautures/Feautures';
-import Footer from '../Components/Footer/Footer';
-import Hero from '../Components/Hero/Hero';
-import Tech from '../Components/Tech/Tech';
+import Feautures from '../../Components/Feautures/Feautures';
+import Footer from '../../Components/Footer/Footer';
+import Hero from '../../Components/Hero/Hero';
+import Tech from '../../Components/Tech/Tech';
 
 export default function Home() {
 	return (
