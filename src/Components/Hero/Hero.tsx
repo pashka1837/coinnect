@@ -1,19 +1,21 @@
 import styles from './Hero.module.css';
 import heroIMG from '../../assets/images/hero.gif';
 import {useNavigate} from 'react-router-dom';
+import {useInView} from 'react-intersection-observer';
 
 export default function Hero() {
 	const navigate = useNavigate();
+	const {ref, inView} = useInView();
 	return (
 		<div className={`${styles.hero} container_gr`} >
 			<div className={styles.inner}>
-				<div className={styles.text}>
-					<div>
+				<div ref={ref} className={styles.text}>
+					<div className={` ${styles.hidden} ${inView && styles.open}`}>
 						<h1 className={styles.name}>COINNECT.</h1>
 						<h2 className={styles.title}>Experience the future.</h2>
 					</div>
-					<h3 className={styles.desc}>Platform that delivers secure, engaging, and interactive virtual events.</h3>
-					<div className={styles.btn_container}>
+					<h3 className={` ${styles.desc} ${styles.hidden} ${inView && styles.open}`}>Platform that delivers secure, engaging, and interactive virtual events.</h3>
+					<div className={` ${styles.btn_container} ${styles.hidden} ${inView && styles.open}`}>
 						<button
 							className={`${styles.sign_btn} btn`}
 							type='button'

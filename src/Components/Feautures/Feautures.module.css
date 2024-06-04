@@ -1,9 +1,29 @@
+/* animations */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(300%);
+  transition: all 800ms;
+}
+
+.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 .features {
   padding-bottom: calc(var(--footer-height) + 20px);
   height: auto;
   justify-items: center;
   align-items: start;
   gap: 50px;
+  overflow-x: hidden;
 }
 
 .text {

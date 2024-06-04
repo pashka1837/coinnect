@@ -1,3 +1,22 @@
+/* animations */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(300%);
+  transition: all 800ms;
+}
+
+.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 .tech {
   padding-bottom: calc(var(--footer-height) + 20px);
   height: auto;
