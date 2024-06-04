@@ -1,3 +1,22 @@
+/* animations */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(300%);
+  transition: all 1200ms;
+}
+
+.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
 .cards_container {
   display: grid;
   gap: 50px;

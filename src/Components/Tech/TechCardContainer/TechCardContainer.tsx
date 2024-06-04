@@ -4,12 +4,16 @@ import data from '../../../constants/tech_page_data';
 import TechCard from '../TechCard/TechCard';
 import styles from './TechCardContainer.module.css';
 
-export default function TechCardContainer() {
+type Props = {
+	inView: boolean;
+};
+
+export default function TechCardContainer({inView}: Props) {
 	const {isTablet, isDesk} = useMediaQuery();
 	const {slides} = useSlides({data});
 
 	return (
-		<>
+		<div className={`${styles.hidden} ${inView && styles.open}`}>
 			{isTablet && isDesk && (
 				<div className={`${styles.cards_container} ${styles.big}`}>
 					<TechCard {...data.at(slides.prev)!} />
@@ -28,7 +32,7 @@ export default function TechCardContainer() {
 					<TechCard {...data.at(slides.next)!} />
 				</div>
 			)}
-		</>
+		</div>
 
 	);
 }
