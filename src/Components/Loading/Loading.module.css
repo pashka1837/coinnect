@@ -1,0 +1,33 @@
+.loader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: grid;
+  place-items: center;
+
+  background-color: var(--dark-grey);
+}
+
+.logoIMG {
+  animation: pulse 1s infinite ease-in-out alternate;
+
+  width: 50vw;
+}
+
+@media screen and (min-width: 768px) {
+  .logoIMG {
+    width: 20vw;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

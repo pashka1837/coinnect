@@ -29,7 +29,6 @@ export default function useMediaQuery() {
 
 		window.addEventListener('resize', changeWith);
 		return () => {
-			console.log('useeffect');
 			window.removeEventListener('resize', changeWith);
 		};
 	}, [isTablet, isDesk]);

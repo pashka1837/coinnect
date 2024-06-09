@@ -8,7 +8,7 @@ export default function Footer() {
 				<Link to={'/contact'}>Contact us</Link>
 			</div>
 			<div className={styles.rights}>
-				<p>Copyright © 2024 Coinnect,<span>x</span></p>
+				<p>Copyright © 2023 Coinnect,<span>x</span></p>
 				<p>All rights reserved</p>
 			</div>
 		</div>

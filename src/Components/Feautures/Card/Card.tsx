@@ -6,7 +6,6 @@ type Props = {
 } & FeatureCardData;
 
 export default function Card({title, desc, inView}: Props) {
-	console.log(inView);
 	return (
 		<div className={`${styles.card} ${styles.hidden} ${inView && styles.open}`}>
 			<h4 className={styles.card_title}>{title}</h4>
